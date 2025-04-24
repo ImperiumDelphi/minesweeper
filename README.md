@@ -3,7 +3,8 @@ This game was developed for the RAD Programmer Challenge #1
 
 Bem-vindo ao Minesweeper: Operação Ilha Perdida!
 
-Este repositório contém o código-fonte de Minesweeper: Operação Ilha Perdida, um jogo desenvolvido em Pascal para uma competição de programação. Inspirado no clássico Campo Minado, este projeto traz uma temática militar envolvente, ambientada em uma ilha misteriosa com 8 campos de jogo distintos. Você é um especialista em desminagem encarregado de limpar terrenos perigosos, desde praias traiçoeiras até fortalezas abandonadas.  
+Este repositório contém o código-fonte de Minesweeper: Operação Ilha Perdida, um jogo desenvolvido em Pascal para uma competição de programação. Inspirado no clássico Campo Minado, este projeto traz uma temática militar envolvente, ambientada em uma ilha misteriosa com 8 campos de jogo distintos. Você é um especialista em localização de minas encarregado de limpar terrenos perigosos.
+
 Este é um projeto de código aberto, criado com paixão para demonstrar habilidades de programação e criatividade. Sinta-se à vontade para explorar o código, jogar, contribuir ou adaptá-lo para seus próprios projetos. Abaixo, você encontrará mais detalhes sobre como o jogo funciona, como executá-lo e algumas notas sobre o desenvolvimento. Divirta-se e boa sorte na sua missão!
 
 Sobre o Desenvolvimento e Limitações
@@ -13,7 +14,8 @@ Devido à minha carga de trabalho, Minesweeper: Operação Ilha Perdida foi dese
 
 Welcome to Minesweeper: Lost Island Operation!
 
-This repository hosts the source code for Minesweeper: Lost Island Operation, a game developed in Pascal for a programming competition. Inspired by the classic Minesweeper, this project features an immersive military theme, set on a mysterious island with 8 unique playable fields. You are a demining expert tasked with clearing hazardous terrains, from treacherous beaches to abandoned fortresses.  
+This repository contains the source code for Minesweeper: Lost Island Operation, a game developed in Pascal for a programming competition. Inspired by the classic Minesweeper, this project features an immersive military theme, set on a mysterious island with 8 distinct playable fields. You are a mine-detection expert tasked with clearing hazardous terrains.
+
 This is an open-source project, built with passion to showcase programming skills and creativity. Feel free to explore the code, play the game, contribute, or adapt it for your own projects. Below, you’ll find more details on how the game works, how to run it, and some notes on its development. Have fun and good luck on your mission!
 
 About Development and Limitations
