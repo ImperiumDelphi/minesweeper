@@ -1,0 +1,56 @@
+unit uArrow;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, FMX.Effects, FMX.Objects;
+
+type
+  TArrow = class(TFrame)
+    Image1: TImage;
+    ShadowEffect1: TShadowEffect;
+    procedure Image1MouseLeave(Sender: TObject);
+    procedure Image1MouseEnter(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
+  private
+    FClick: TNotifyEvent;
+  public
+    Property OnClick : TNotifyEvent Read FClick Write FClick;
+  end;
+
+implementation
+
+Uses
+   FMX.Ani;
+
+{$R *.fmx}
+
+procedure TArrow.Image1Click(Sender: TObject);
+begin
+TAnimator.AnimateFloat(ShadowEffect1, 'Distance', 0, 0.02);
+TThread.CreateAnonymousThread(
+   Procedure
+   Begin
+   Sleep(210);
+   TTHread.Queue(Nil,
+      Procedure
+      Begin
+      TAnimator.AnimateFloat(ShadowEffect1, 'Distance', 3, 0.02);
+      If Assigned(OnClick) Then OnClick(Self);
+      End);
+   End).Start;
+end;
+
+procedure TArrow.Image1MouseLeave(Sender: TObject);
+begin
+//TAnimator.AnimateColor(ShadowEffect1, 'ShadowColor', TAlphaColors.Black, 0.02);
+ShadowEffect1.Distance := 3;
+end;
+
+procedure TArrow.Image1MouseEnter(Sender: TObject);
+begin
+//TAnimator.AnimateColor(ShadowEffect1, 'ShadowColor', TAlphaColors.Yellow, 0.02);
+end;
+
+end.

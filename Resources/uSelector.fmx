@@ -1,0 +1,34 @@
+object Selector: TSelector
+  Size.Width = 200.000000000000000000
+  Size.Height = 40.000000000000000000
+  Size.PlatformDefault = False
+  inline ArrowLeft: TArrow
+    Align = FitLeft
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    inherited Image1: TImage
+      MultiResBitmap.Height = 256
+      MultiResBitmap.Width = 256
+    end
+  end
+  inline ArrowRight: TArrow
+    Align = Right
+    Position.X = 160.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    inherited Image1: TImage
+      MultiResBitmap.Height = 256
+      MultiResBitmap.Width = 256
+      RotationAngle = 0.000000000000000000
+    end
+  end
+  object Selection: TLayout
+    Align = Client
+    Size.Width = 120.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+end

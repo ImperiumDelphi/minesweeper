@@ -1,0 +1,51 @@
+unit uArrow;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, FMX.Effects, FMX.Objects;
+
+type
+  TArrow = class(TFrame)
+    Image1: TImage;
+    ShadowEffect1: TShadowEffect;
+    procedure Image1MouseLeave(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
+  private
+    FClick: TProc;
+  public
+    Property OnClicked : TProc Read FClick Write FClick;
+  end;
+
+implementation
+
+Uses
+   FMX.Ani,
+   uMedia;
+
+{$R *.fmx}
+
+procedure TArrow.Image1Click(Sender: TObject);
+begin
+Media.Click2;
+TAnimator.AnimateFloat(ShadowEffect1, 'Distance', 0, 0.02);
+If Assigned(OnClicked) Then OnClicked;
+TThread.CreateAnonymousThread(
+   Procedure
+   Begin
+   Sleep(210);
+   TTHread.Queue(Nil,
+      Procedure
+      Begin
+      TAnimator.AnimateFloat(ShadowEffect1, 'Distance', 3, 0.02);
+      End);
+   End).Start;
+end;
+
+procedure TArrow.Image1MouseLeave(Sender: TObject);
+begin
+ShadowEffect1.Distance := 3;
+end;
+
+end.
