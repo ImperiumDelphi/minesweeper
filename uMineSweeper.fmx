@@ -1,0 +1,19 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 924
+  ClientWidth = 508
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 518.000000000000000000
+    Position.Y = 126.000000000000000000
+    TabOrder = 0
+    Text = 'Button1'
+    TextSettings.Trimming = None
+  end
+end

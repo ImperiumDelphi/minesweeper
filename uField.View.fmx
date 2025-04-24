@@ -1,0 +1,5 @@
+object FieldView: TFieldView
+  Size.Width = 440.000000000000000000
+  Size.Height = 440.000000000000000000
+  Size.PlatformDefault = False
+end
