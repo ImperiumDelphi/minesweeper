@@ -1,5 +1,4 @@
-[Baixe na Google Play Store](https://play.google.com/store/apps/details?id=br.com.imperium.MineSweeper)
-
+[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/pt_badge_web_generic.png" alt="Download from Google Play" height="80">](https://play.google.com/store/apps/details?id=br.com.imperium.MineSweeper)
 
 [![minesweeper](Imagens/Game_01.jpg)](https://youtu.be/NOYwPodwzKE)
 
